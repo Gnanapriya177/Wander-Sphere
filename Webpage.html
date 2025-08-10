@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 0.1">
+	<title>Travel Blog</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+	<link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+	<div class="home" id = "home">
+		<div class = "navigation">
+		<h2 class="title">WANDER SPHERE</h2>
+		<div class = "hamburger-icon" onclick = "toggleMenu()">
+			 &#9776;
+		</div>
+		
+		<nav class="nav-bar">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#tour-packages">Tour Packages</a>
+			<a href="#contact">Contact</a>
+			<a href="#explore-places">Explore Places</a>
+			<a href="Register.html">Register</a>
+		</nav>
+		</div>
+		<h1 class = "title1">Travel World !!!</h1>
+		
+	</div>
+
+	<div id = "about">
+		<h2 class = "header">ABOUT</h2>
+		<p></p>
+	</div>
+	
+	<div id = "explore-places">
+	<h2 class="header">MOST FAMOUS PLACES</h2>
+	<div id="explore-place">
+		<div class="card">
+			<img src = "resources/tower-bridge.jpeg" alt = "Tower Bridge" width = "300px" height = "200px">
+			<h3>London</h3>
+			<p>
+				Tower Bridge, movable bridge of the double-leaf bascule (drawbridge) 
+			type that spans the River Thames between the Greater London boroughs of Tower 
+			Hamlets and Southwark. It is a distinct landmark.
+			</p>
+			<button>Read More</button>
+		</div>
+		
+		<div class="card">
+			<img src = "resources/Colosseum.jpg" alt = "Colosseum" width = "300px" height = "200px">
+			<h3>Rome</h3>
+			<p>
+				The Colosseum, also known as the Flavian Amphitheatre, is a massive elliptical 
+				amphitheater in the center of Rome, Italy. It's a defining symbol of ancient Rome 
+				and one of the most iconic structures in the world.  
+			</p>
+			<button>Read More</button>
+		</div>
+		
+		<div class="card">
+			<img src = "resources/Eiffel tower.jpg" alt = "Eiffel tower" width = "300px" height = "200px">
+			<h3>Paris</h3>
+			<p>
+				The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. 
+				It is named after the engineer Gustave Eiffel, whose company designed and built the tower 
+				from 1887 to 1889.
+			</p>
+			<button>Read More</button>
+		</div>
+	</div>
+	</div>
+	
+	<footer>
+		<p>&copy; 2025 TRAVEL. All rights reserved.</p>
+		<div class = "social-icons">
+		<a href = "https://www.instagram.com/gnanapriya177/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+		<a href = "mailto:gnanapriya177@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+		<a href = ""><i class="fa-solid fa-phone"></i></a>
+		</div>
+	</footer>
+	
+	<script>
+	
+	const navBar = document.querySelector(".nav-bar");
+	const hamburger = document.querySelector(".hamburger-icon");
+	
+	function toggleMenu(){
+		navBar.classList.toggle("show");
+	}
+	
+	document.addEventListener("click", function(event){
+	if (!navBar.contains(event.target) && !hamburger.contains(event.target)) {
+		navBar.classList.remove("show");
+	}
+	});
+	
+	</script>
+	
+</body>
+</html>
