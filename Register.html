@@ -1,37 +1,120 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Registration Form</title>
-	<link rel = "stylesheet" href = "style.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel = "stylesheet" href = "style.css">
+  </head>
 
 <body class = "forms">
 
-	<form action = "https://formsubmit.co/gnanapriya177@gmail.com" method = "post">
-		<div class = "container">
-		<h2 class = "heading">REGISTER</h2>
-		<hr>
-			<div class = "container-items">
-				<label for = "name">Enter the Name</label><br>
-				<input type = "text" name = "name"><br>
-				<label for = "mail-id">Enter your Email</label><br>
-				<input type = "email" name = "email"><br>
-				<label for = "Phone">Phone Number</label><br>
-				<input type = "" name = "phone-no"><br>
-				<label for = "dob">DOB: </label>
-				<input type = "date" name = "date"><br>
-				<label for = "state">State</label><br>
-				<input type = "text" name = "state"><br>
-				<label for = "City">City</label><br>
-				<input type = "text" name = "city"><br>
-				<input type = "hidden" name = "_next" value = "Webpage.html">
-				<input type = "hidden" name = "_captcha" value = "false">
-				<button type = "submit">Submit</button>
-			</div>
-		</div>
-		
-	</form>
-	
+    <form action = "https://formsubmit.co/gnanapriya177@gmail.com" method = "post">
+        <div class = "container">
+        <h2 class = "heading">ACCOUNT REGISTRATION</h2>
+        <hr>
+            <div class = "container">
+
+                <!--PERSONAL INFORMATION-->
+
+                <div class = "personal-information">
+
+                    <h3>PERSONAL INFORMATION</h3>
+
+                    <!--NAME-->
+
+                    <label>Full Name</label><br>
+                    <input type ="text" name ="first" placeholder="First Name">
+                    <input type="text" name="last" placeholder="Last Name">
+                    <br>
+
+                    <!--GENDER-->
+
+                    <form>
+                        <p>Gender</p>
+                        <label>
+                            <input type="radio" name="gender" value="male">Male
+                        </label>
+                            <input type="radio" name="gender" value="female">Female
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="other">Other
+                        </label>
+                    </form>
+
+                    <br>
+
+                    <!--DOB-->
+
+                    <label>Date Of Birth</label>
+                    <input type="date">
+
+                    <br>
+
+                    <!--NATIONALITY-->
+
+                    <form>
+                        <label>Nationality</label>
+                        <Select name="nationality">
+                            <option value="" disabled selected>Select Your Nationality</option>
+                            <option value="indian">Indian</option>
+                            <option value="american">American</option>
+                            <option value="british">British</option>
+                            <option value="canadian">Canadian</option>
+                            <option value="chinese">Chinese</option>
+                            <option value="german">German</option>
+                            <option value="japanese">Japanese</option>
+                            <option value="other">Other</option>
+                        </Select>
+                    </form>
+
+                    <!--ID PROOF-->
+
+                    <form>
+                        <label>ID Proof Type</label>
+                        <select name = "id-proof">
+                            <option value="" disabled selected>Select the ID Proof Type</option>                            
+                            <option value="Aadhaar-ID">Aadhaar Card</option>                            
+                            <option value="PAN-card">PAN Card</option>                            
+                            <option value="passport">Passport</option>                            
+                            <option value="license">Driving License</option>
+                            <option value="voter-ID">Voter ID</option>                                
+                        </select>
+                        <br>
+                        <label>ID Proof Number</label>
+                        <input type = "text">
+                    </form>
+
+                    <button>Save and Next</button>
+
+                </div>
+                <br>
+                <hr>
+
+                <!--CONTACT INFORMATION-->
+
+                <div class="contact-information">
+                    <h3>CONTACT INFORMATION</h3>
+                    <form>
+                        <label for="email">Email - ID</label>
+                        <input type="email" name="mail-id">
+                        <br>
+                        <label for = "phone">Phone Number</label>
+                        <input type="tel" name="number">
+                        <form>
+                            <label for="address">Address</label>
+                            <br>
+                            <label for="street">Street</label>
+                            <input type="text" name="street">
+                            <label for=""></label>
+                        </form>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        
+    </form>
+    
 </body>
 
 </html>
