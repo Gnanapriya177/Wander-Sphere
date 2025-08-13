@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h2>TICKET BOOKING FORM</h2>
+        <hr>
+
+        <!--JOURNEY DETAILS-->
+
+        <form>
+            <label for="departure">Departure City</label>
+            <input type="text" name="depature-city">
+            <br>
+            <label for="destination">Destination</label>
+            <input type="text" name="destination">
+            <br>
+            <label for="d-date">Departure Date</label>
+            <input type="date" name="d-date">
+            <br>
+            <label for="r-date">Return Date</label>
+            <input type="date" name="r-date">
+            <br>
+
+            <!--TRAVEL CLASS-->
+
+            <label for="travel-class">Travel Class</label>
+            <select>
+                <option value="" disabled selected>Select the Class</option>
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First</option>
+            </select>
+            <br>
+            
+            <!--PASSENGER TYPE-->
+
+            <h3>Select Passengers</h3>
+
+            <!--ADULTS-->
+
+            <label for="adult-count">Adults:</label>
+            <input type="number" name="adult-count" id="adult-count" min="0" max="10" value="0">
+
+            <!--CHILDREN-->
+
+            <label for="adult-count">Children:</label>
+            <input type="number" name="child-count" id="child-count" min="0" max="10" value="0">       
+
+        </form>
+
+        <!--PASSENGER INFORMATION-->
+
+    </form>
+</body>
+</html> 
