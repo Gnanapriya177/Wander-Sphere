@@ -9,14 +9,16 @@
 <body class = "forms">
 
     <form action = "https://formsubmit.co/gnanapriya177@gmail.com" method = "post">
-        <div class = "container">
-        <h2 class = "heading">ACCOUNT REGISTRATION</h2>
-        <hr>
-            <div class = "container">
+        <div class = "container_form">
+            <div class="form_heading">
+            <h2 class = "heading">ACCOUNT REGISTRATION</h2>
+            <hr>
+            </div>
+            <div class = "form_container">
 
                 <!--PERSONAL INFORMATION-->
 
-                <div class = "personal-information">
+                <div class = "personal_information">
 
                     <h3>PERSONAL INFORMATION</h3>
 
@@ -29,8 +31,9 @@
 
                     <!--GENDER-->
 
-                    <form>
+                    <div class="gender">
                         <p>Gender</p>
+                        <br>
                         <label>
                             <input type="radio" name="gender" value="male">Male
                         </label>
@@ -39,21 +42,23 @@
                         <label>
                             <input type="radio" name="gender" value="other">Other
                         </label>
-                    </form>
+                    </div>
 
                     <br>
 
                     <!--DOB-->
 
                     <label>Date Of Birth</label>
+                    <br>
                     <input type="date">
 
                     <br>
 
                     <!--NATIONALITY-->
 
-                    <form>
+                    <div class = "nationality">
                         <label>Nationality</label>
+                        <br>
                         <Select name="nationality">
                             <option value="" disabled selected>Select Your Nationality</option>
                             <option value="indian">Indian</option>
@@ -65,12 +70,13 @@
                             <option value="japanese">Japanese</option>
                             <option value="other">Other</option>
                         </Select>
-                    </form>
+                    </div>
 
                     <!--ID PROOF-->
 
-                    <form>
+                    <div class="id_proof">
                         <label>ID Proof Type</label>
+                        <br>
                         <select name = "id-proof">
                             <option value="" disabled selected>Select the ID Proof Type</option>                            
                             <option value="Aadhaar-ID">Aadhaar Card</option>                            
@@ -81,35 +87,13 @@
                         </select>
                         <br>
                         <label>ID Proof Number</label>
+                        <br>
                         <input type = "text">
-                    </form>
-
-                    <button>Save and Next</button>
+                    </div>
 
                 </div>
                 <br>
-                <hr>
-
-                <!--CONTACT INFORMATION-->
-
-                <div class="contact-information">
-                    <h3>CONTACT INFORMATION</h3>
-                    <form>
-                        <label for="email">Email - ID</label>
-                        <input type="email" name="mail-id">
-                        <br>
-                        <label for = "phone">Phone Number</label>
-                        <input type="tel" name="number">
-                        <form>
-                            <label for="address">Address</label>
-                            <br>
-                            <label for="street">Street</label>
-                            <input type="text" name="street">
-                            <label for=""></label>
-                        </form>
-                    </form>
-                </div>
-
+                <button>Save and Next</button>
             </div>
         </div>
         
