@@ -127,7 +127,7 @@ body {
     transform: translateY(-5px);
 }
 
-button{
+.card button{
     width: 150px;
     height: 30px;
     border-radius: 10px;
@@ -169,53 +169,95 @@ footer {
     transform: scale(1.1);
 }
 
-/* Registration Form */
 
-.forms {
-	margin: 0;
-    height: 100vh;
-  	justify-content: center;
-  	align-items: center;
-    background: linear-gradient(135deg, #956bf5, #45cfe7);
-}
+/* File.html */
 
-.container_form{
-    width: 500px;
-    height: 600px;
-    background-color: white;
-    margin: 20px auto;
-    position: absolute;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-	justify-content: center;
-	align-items: center;
-}
+.register_form{
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #956bf5, #45cfe7);
+      font-family: Arial, sans-serif;
+    }
 
-.form_heading{
-    text-align: center;
-}
+    .container_form {
+      width: 500px;
+      background: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 25px;
+      border-radius: 15px;
+    }
 
-.gender{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 10px;
-}
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-label{
-    text-align: left;
-}
+    label {
+      display: block;
+      margin-left: 30px;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      text-align: left;
+    }
 
-input{
-    border: none;
-    outline: none;
-    border-bottom: 1px solid black;
-    justify-content: center;
-    margin: 20px;
-}
+    input {
+      width: 85%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid bisque;
+      border-radius: 6px;
+      text-align: center;
+      align-items: center;
+    }
 
-select{
-    margin: 10px;
-}
+    .container_form .submit {
+      width: 50%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid black;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 6px;
+      color: black;
+      font-size: 16px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .container_form .submit:hover {
+      background: rgba(0, 0, 0, 0.3);
+      color: black;
+      box-shadow: 0 2px 5px black;
+      transition: all ease 0.4s;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background: rgba(0, 0, 0, 0.4);
+      color: black;
+    }
+
+    .actions .submit {
+      width: auto;
+      margin: 2px;
+      padding: 6px 12px;
+      font-size: 14px;
+    }
