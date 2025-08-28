@@ -1,5 +1,4 @@
 //Navigation Bar
-
 const navBar = document.querySelector(".nav-bar");
 const hamburger = document.querySelector(".hamburger-icon");
 	
